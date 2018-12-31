@@ -1,4 +1,4 @@
-<h3 name="header" id="header" align="center">
+<h3 name="sherpa-header" id="sherpa-header" align="center">
   <br>
 	<img width="400" src="./examples/test-output.png" alt="sherpa_41 test webpage">
 </h3>
@@ -60,7 +60,7 @@ make
 
 - The Display module can issue commands to render only rectangular block nodes at this time.
 
-- Sherpa's `Canvas` renderer can currently generate fairly non-trivial webpages like [the header](#sherpa_header).
+- Sherpa's `Canvas` renderer can currently generate fairly non-trivial webpages like [the header](#sherpa-header).
 
 ### Notes
 
