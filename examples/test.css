@@ -33,12 +33,12 @@ div {
 
 .blank {
     background: rgba(255, 255, 255, 0.6);
-    margin-left: 240px;
+    margin-left: 270px;
 }
 
 .blank.horizontal {
     height: 300px;
-    margin-top: 240px;
+    margin-top: 270px;
 }
 
 .blank.vertical {
