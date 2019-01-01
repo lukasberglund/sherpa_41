@@ -1,9 +1,9 @@
 <h3 name="sherpa-header" id="sherpa-header" align="center">
   <br />
-	<img width="600" src="./examples/sherpa-webpage-output.png" alt="sherpa_41 test webpage" />
+	<img width="480" src="./examples/sherpa-webpage-output.png" alt="sherpa_41 test webpage" />
   <span width="400" />
-	<img width="100" src="./examples/blank.png" alt="sherpa_41 test webpage" />
-	<img width="300" src="./examples/test-output.png" alt="sherpa_41 test webpage" />
+	<img width="75" src="./examples/blank.png" alt="sherpa_41 test webpage" />
+	<img width="280" src="./examples/test-output.png" alt="sherpa_41 test webpage" />
   <h5 align="center"><sub>A <code>sherpa_41</code>-rendered webpages</sub></h5>
 </h3>
 
