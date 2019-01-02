@@ -15,6 +15,9 @@ TEST_F(CSSTest, ValueCtorDtor) {
     TextValue  text2(text);
     UnitValue  unit2(unit);
     ColorValue color2(color);
+    auto       text3  = make_value(TextValue("txt"));
+    auto       unit3  = make_value(UnitValue(1.0, px));
+    auto       color3 = make_value(ColorValue(0, 0, 0, 0));
 }
 
 TEST_F(CSSTest, makeValue) {
@@ -59,6 +62,7 @@ TEST_F(CSSTest, SelectorCtorDtor) {
 
 TEST_F(CSSTest, DeclarationCtorDtor) {
     Declaration declaration("key", make_value(TextValue("value")));
+    Declaration declaration2(declaration);
 }
 
 TEST_F(CSSTest, RuleCtorDtor) {
