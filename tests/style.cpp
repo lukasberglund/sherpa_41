@@ -12,7 +12,8 @@ class StyleTest : public ::testing::Test {};
 using namespace Style;
 
 TEST_F(StyleTest, StyledNodeCtorDtor) {
-    StyledNode styledNode(nullptr);
+    StyledNode                  styledNode(nullptr);
+    std::unique_ptr<StyledNode> snuptr(new StyledNode(nullptr));
 }
 
 TEST_F(StyleTest, value) {

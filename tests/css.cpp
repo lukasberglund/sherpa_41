@@ -15,9 +15,9 @@ TEST_F(CSSTest, ValueCtorDtor) {
     TextValue  text2(text);
     UnitValue  unit2(unit);
     ColorValue color2(color);
-    auto       text3  = make_value(TextValue("txt"));
-    auto       unit3  = make_value(UnitValue(1.0, px));
-    auto       color3 = make_value(ColorValue(0, 0, 0, 0));
+    ValuePtr   text3  = ValuePtr(new TextValue("txt"));
+    ValuePtr   unit3  = ValuePtr(new UnitValue(1.0, px));
+    ValuePtr   color3 = ValuePtr(new ColorValue(0, 0, 0, 0));
 }
 
 TEST_F(CSSTest, makeValue) {

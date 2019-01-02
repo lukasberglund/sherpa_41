@@ -169,16 +169,15 @@ TEST_F(LayoutTest, FromChildrenDisplayInline_Within_Inline) {
 
     ASSERT_EQ(anonBox->getChildren().size(), 1);
 
-    auto outerNode = dynamic_cast<StyledBox *>(
-                           anonBox->getChildren()[0].get())
-                           ->getContent();
+    auto outerNode = dynamic_cast<StyledBox *>(anonBox->getChildren()[0].get())
+                         ->getContent();
 
     ASSERT_EQ(outerNode.value("display")->print(), "inline");
     ASSERT_EQ(anonBox->getChildren()[0]->getChildren().size(), 1);
 
     auto innerNode = dynamic_cast<StyledBox *>(
-            anonBox->getChildren()[0]->getChildren()[0].get())
-            ->getContent();
+                         anonBox->getChildren()[0]->getChildren()[0].get())
+                         ->getContent();
 
     ASSERT_EQ(innerNode.value("display")->print(), "inline");
 }
